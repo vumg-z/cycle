@@ -1,0 +1,23 @@
+# Ignorar directorios y archivos generados por npm/yarn
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignorar archivos generados por Tailwind CSS
+/dist/
+
+# Ignorar archivos de configuración generados por Tailwind CSS
+/tailwind.config.js
+/postcss.config.js
+
+# Ignorar archivos de compilación generados por tu código
+/dist/
+
+# Ignorar archivos de compilación generados por Flowbite
+/flowbite/
+
+# Ignorar archivos de dependencias de desarrollo generados por Flowbite
+/.flowbite/
+
+# Ignorar archivos de dependencias de desarrollo generados por Tailwind CSS
+/.cache/
