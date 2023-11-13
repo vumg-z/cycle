@@ -1241,6 +1241,10 @@ input:checked + .toggle-bg {
   margin-top: 1rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -2516,8 +2520,8 @@ input:checked + .toggle-bg {
   --tw-bg-opacity: 0.5;
 }
 
-.bg-\[url\(\'https\:\/\/flowbite\.s3\.amazonaws\.com\/docs\/jumbotron\/conference\.jpg\'\)\] {
-  background-image: url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg');
+.bg-\[url\(\'\.\.\/src\/images\/fondoCTA\.png\'\)\] {
+  background-image: url('../src/images/fondoCTA.png');
 }
 
 .decoration-slice {
@@ -3627,6 +3631,10 @@ input:checked + .toggle-bg {
 
   .md\:w-1\/2 {
     width: 50%;
+  }
+
+  .md\:w-1\/3 {
+    width: 33.333333%;
   }
 
   .md\:flex-row {
