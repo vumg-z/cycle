@@ -4,7 +4,7 @@ npm-debug.log
 yarn-error.log
 
 # Ignorar archivos generados por Tailwind CSS
-/dist/
+
 
 # Ignorar archivos de configuración generados por Tailwind CSS
 /tailwind.config.js
