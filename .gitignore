@@ -11,7 +11,7 @@ yarn-error.log
 /postcss.config.js
 
 # Ignorar archivos de compilación generados por tu código
-/dist/
+
 
 # Ignorar archivos de compilación generados por Flowbite
 /flowbite/
