@@ -1093,10 +1093,6 @@ input:checked + .toggle-bg {
   inset: 0px;
 }
 
-.inset-20 {
-  inset: 5rem;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
@@ -1410,10 +1406,6 @@ input:checked + .toggle-bg {
 
 .w-full {
   width: 100%;
-}
-
-.w-32 {
-  width: 8rem;
 }
 
 .max-w-2xl {
@@ -3690,10 +3682,6 @@ input:checked + .toggle-bg {
 }
 
 @media (min-width: 1024px) {
-  .lg\:inset-3 {
-    inset: 0.75rem;
-  }
-
   .lg\:order-1 {
     order: 1;
   }
