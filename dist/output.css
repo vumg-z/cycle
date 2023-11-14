@@ -1093,36 +1093,8 @@ input:checked + .toggle-bg {
   inset: 0px;
 }
 
-.inset-10 {
-  inset: 2.5rem;
-}
-
-.-inset-10 {
-  inset: -2.5rem;
-}
-
-.-inset-20 {
-  inset: -5rem;
-}
-
-.-inset-40 {
-  inset: -10rem;
-}
-
-.-inset-11 {
-  inset: -2.75rem;
-}
-
-.-inset-12 {
-  inset: -3rem;
-}
-
-.-inset-14 {
-  inset: -3.5rem;
-}
-
-.-inset-16 {
-  inset: -4rem;
+.inset-20 {
+  inset: 5rem;
 }
 
 .bottom-0 {
@@ -1438,6 +1410,10 @@ input:checked + .toggle-bg {
 
 .w-full {
   width: 100%;
+}
+
+.w-32 {
+  width: 8rem;
 }
 
 .max-w-2xl {
@@ -3714,12 +3690,8 @@ input:checked + .toggle-bg {
 }
 
 @media (min-width: 1024px) {
-  .lg\:relative {
-    position: relative;
-  }
-
-  .lg\:-inset-0 {
-    inset: -0px;
+  .lg\:inset-3 {
+    inset: 0.75rem;
   }
 
   .lg\:order-1 {
