@@ -99,7 +99,8 @@
 
   <!-- seccion main, fondo containers -->
 
-  <section class="bg-center bg-no-repeat bg-[url('../src/images/1-Slider.jpg')] bg-gray-600 bg-blend-multiply">
+  <section id="dynamic-background"
+    class="bg-center bg-no-repeat bg-[url('../src/images/1-Slider.jpg')] bg-gray-600 bg-blend-multiply">
     <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
       <!-- <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">REDCYCLE®</h1> -->
       <img src="./src/images/menor tamaño.png" alt="" class="mx-auto">
@@ -231,6 +232,48 @@
     </div>
   </footer>
 
+  <script>
+    // Función que selecciona la imagen de fondo basada en la resolución de la pantalla
+    function selectBackgroundImageForResolution() {
+      // Obtiene las dimensiones de la ventana del navegador
+      var width = window.innerWidth;
+      var height = window.innerHeight;
+
+      // Define las rutas de las imágenes de fondo
+      var path = "../src/images/logo/"; // Asegúrate de que esta ruta sea correcta
+      var images = {
+        "1196x768": "1196x768_Laptop-1.png",
+        "1196x768": "1196x768_Laptop.png", // This appears to be an alternative for the same resolution
+        "1402x900": "1402x900_WideScreen.png",
+        "1680x1080": "1680x1080_FullHd.png",
+        "3840x2160": "3840x2160_4K.png"
+      };
+
+
+      // Selecciona la imagen de fondo basada en la resolución
+      var selectedImage;
+      if (width <= 1196 && height <= 768) {
+        selectedImage = images["1196x768"];
+      } else if (width <= 1402 && height <= 900) {
+        selectedImage = images["1402x900"];
+      } else if (width <= 1680 && height <= 1080) {
+        selectedImage = images["1680x1080"];
+      } else if (width <= 3840 && height <= 2160) {
+        selectedImage = images["3840x2160"];
+      } else {
+        // Si no coincide con ninguna resolución conocida, usa la imagen de mayor resolución
+        selectedImage = images["3840x2160"];
+      }
+
+      // Actualiza el estilo de fondo de la sección con la imagen seleccionada
+      var section = document.getElementById('dynamic-background');
+      section.style.backgroundImage = `url('${path}${selectedImage}')`;
+    }
+
+    // Ejecuta la función cuando la página se carga y cuando se cambia el tamaño de la ventana
+    window.onload = selectBackgroundImageForResolution;
+    window.onresize = selectBackgroundImageForResolution;
+  </script>
 
   <script src="./dist/flowbite.min.js"></script>
 </body>
