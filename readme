@@ -1,0 +1,4 @@
+ npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+
+ perfect!! now, do the same, create a nav, using this template, i mean... modify it. For this pages:
+contacto.html compromis.html, index.html, nosotros.html, servicios.html 
