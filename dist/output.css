@@ -2569,36 +2569,8 @@ input:checked + .toggle-bg {
   --tw-bg-opacity: 0.5;
 }
 
-.bg-\[url\(\'\.\.\/src\/images\/logo\/smartphone\'\)\] {
-  background-image: url('../src/images/logo/smartphone');
-}
-
-.bg-\[url\(\'\.\.\/src\/images\/logo\/smartphone\.png\'\)\] {
-  background-image: url('../src/images/logo/smartphone.png');
-}
-
-.bg-\[url\(\'\.\.\/src\/images\/logo\/4k\.png\'\)\] {
-  background-image: url('../src/images/logo/4k.png');
-}
-
-.bg-\[url\(\'\.\.\/src\/images\/1-Slider\'\)\] {
-  background-image: url('../src/images/1-Slider');
-}
-
-.bg-\[url\(\'\.\.\/src\/images\/1-Slider\.png\'\)\] {
-  background-image: url('../src/images/1-Slider.png');
-}
-
 .bg-\[url\(\'\.\.\/src\/images\/1-Slider\.jpg\'\)\] {
   background-image: url('../src/images/1-Slider.jpg');
-}
-
-.bg-\[url\(\'\.\.\/src\/images\/logo\/1196x768_Smartphone\.jpg\'\)\] {
-  background-image: url('../src/images/logo/1196x768_Smartphone.jpg');
-}
-
-.bg-\[url\(\'\.\.\/src\/images\/1196x768_Smartphone\.jpg\'\)\] {
-  background-image: url('../src/images/1196x768_Smartphone.jpg');
 }
 
 .decoration-slice {
@@ -3846,6 +3818,10 @@ input:checked + .toggle-bg {
     display: none;
   }
 
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
   .lg\:w-6\/12 {
     width: 50%;
   }
@@ -3856,6 +3832,10 @@ input:checked + .toggle-bg {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-1\/3 {
+    width: 33.333333%;
   }
 
   .lg\:flex-row {
