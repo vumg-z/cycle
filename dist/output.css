@@ -2605,6 +2605,22 @@ input:checked + .toggle-bg {
   background-image: url('./src/images/logo/1196x768_Smartphone');
 }
 
+.bg-\[url\(\'\.\.\/src\/images\/logo\/1196x\.png\'\)\] {
+  background-image: url('../src/images/logo/1196x.png');
+}
+
+.bg-\[url\(\'\.\.\/src\/images\/logo\/1196x7\.png\'\)\] {
+  background-image: url('../src/images/logo/1196x7.png');
+}
+
+.bg-\[url\(\'\.\.\/src\/images\/logo\/1196x768\.png\'\)\] {
+  background-image: url('../src/images/logo/1196x768.png');
+}
+
+.bg-\[url\(\'\.\.\/src\/images\/logo\/1196x768_Laptop\.png\'\)\] {
+  background-image: url('../src/images/logo/1196x768_Laptop.png');
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
