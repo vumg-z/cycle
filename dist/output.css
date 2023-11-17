@@ -2573,6 +2573,22 @@ input:checked + .toggle-bg {
   background-image: url('../src/images/1-Slider.jpg');
 }
 
+.bg-\[url\(\'\.\.\/src\/images\/logo\/\'\)\] {
+  background-image: url('../src/images/logo/');
+}
+
+.bg-\[url\(\'\.\.\/src\/images\/logo\/src\/images\/logo\/1196x768_Smartphone\.png\'\)\] {
+  background-image: url('../src/images/logo/src/images/logo/1196x768_Smartphone.png');
+}
+
+.bg-\[url\(\'\.\.src\/images\/logo\/1196x768_Smartphone\.png\'\)\] {
+  background-image: url('..src/images/logo/1196x768_Smartphone.png');
+}
+
+.bg-\[url\(\'\.\.\/src\/images\/logo\/1196x768_Smartphone\.png\'\)\] {
+  background-image: url('../src/images/logo/1196x768_Smartphone.png');
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
