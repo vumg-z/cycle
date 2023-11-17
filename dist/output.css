@@ -2569,16 +2569,12 @@ input:checked + .toggle-bg {
   --tw-bg-opacity: 0.5;
 }
 
-.bg-\[url\(\'\.\.\/src\/images\/logo\/4k\.png\'\)\] {
-  background-image: url('../src/images/logo/4k.png');
-}
-
-.bg-\[url\(\'\.\.\/src\/images\/logo\/1196x768_Smartphone\'\)\] {
-  background-image: url('../src/images/logo/1196x768_Smartphone');
-}
-
 .bg-\[url\(\'\.\.\/src\/images\/logo\/smartphone\'\)\] {
   background-image: url('../src/images/logo/smartphone');
+}
+
+.bg-\[url\(\'\.\.\/src\/images\/logo\/smartphone\.png\'\)\] {
+  background-image: url('../src/images/logo/smartphone.png');
 }
 
 .decoration-slice {
