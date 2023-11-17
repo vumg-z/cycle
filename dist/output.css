@@ -2569,64 +2569,8 @@ input:checked + .toggle-bg {
   --tw-bg-opacity: 0.5;
 }
 
-.bg-\[url\(\'\.\.\/src\/images\/1-Slider\.jpg\'\)\] {
-  background-image: url('../src/images/1-Slider.jpg');
-}
-
-.bg-\[url\(\'\.\.\/src\/images\/logo\/\'\)\] {
-  background-image: url('../src/images/logo/');
-}
-
-.bg-\[url\(\'\.\.\/src\/images\/logo\/src\/images\/logo\/1196x768_Smartphone\.png\'\)\] {
-  background-image: url('../src/images/logo/src/images/logo/1196x768_Smartphone.png');
-}
-
-.bg-\[url\(\'\.\.src\/images\/logo\/1196x768_Smartphone\.png\'\)\] {
-  background-image: url('..src/images/logo/1196x768_Smartphone.png');
-}
-
 .bg-\[url\(\'\.\.\/src\/images\/logo\/1196x768_Smartphone\.png\'\)\] {
   background-image: url('../src/images/logo/1196x768_Smartphone.png');
-}
-
-.bg-\[url\(\'\.\.\/src\/images\/logo\/1196x768_Smartphone\'\)\] {
-  background-image: url('../src/images/logo/1196x768_Smartphone');
-}
-
-.bg-\[url\(\'\/src\/images\/logo\/1196x768_Smartphone\'\)\] {
-  background-image: url('/src/images/logo/1196x768_Smartphone');
-}
-
-.bg-\[url\(\'src\/images\/logo\/1196x768_Smartphone\'\)\] {
-  background-image: url('src/images/logo/1196x768_Smartphone');
-}
-
-.bg-\[url\(\'\.\/src\/images\/logo\/1196x768_Smartphone\'\)\] {
-  background-image: url('./src/images/logo/1196x768_Smartphone');
-}
-
-.bg-\[url\(\'\.\.\/src\/images\/logo\/1196x\.png\'\)\] {
-  background-image: url('../src/images/logo/1196x.png');
-}
-
-.bg-\[url\(\'\.\.\/src\/images\/logo\/1196x7\.png\'\)\] {
-  background-image: url('../src/images/logo/1196x7.png');
-}
-
-.bg-\[url\(\'\.\.\/src\/images\/logo\/1196x768\.png\'\)\] {
-  background-image: url('../src/images/logo/1196x768.png');
-}
-
-.bg-\[url\(\'\.\.\/src\/images\/logo\/1196x768_Laptop\.png\'\)\] {
-  background-image: url('../src/images/logo/1196x768_Laptop.png');
-}
-
-.bg-\[url\(\'\(\/src\/images\/logo\/1196x768_Smartphone\'\)\] {
-  background-image: url('(/src/images/logo/1196x768_Smartphone');
-}
-
-.bg-\[url\(\'\(\.\.\/src\/images\/logo\/1196x768_Smartphone\'\)\] {
-  background-image: url('(../src/images/logo/1196x768_Smartphone');
 }
 
 .decoration-slice {
@@ -2799,6 +2743,11 @@ input:checked + .toggle-bg {
   padding-bottom: 0.625rem;
 }
 
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -2807,16 +2756,6 @@ input:checked + .toggle-bg {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
 }
 
 .pb-12 {
