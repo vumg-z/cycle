@@ -232,7 +232,7 @@
     </div>
   </footer>
 
-  <!-- <script>
+  <script>
     // Función que selecciona la imagen de fondo basada en la resolución de la pantalla
     function selectBackgroundImageForResolution() {
       var width = window.innerWidth;
@@ -240,11 +240,11 @@
 
       var path = "../src/images/logo/"; // Asegúrate de que esta ruta sea correcta
       var images = {
-        "1196x768": "1196x768_Laptop.png",
-        "1196x768_mobile": "1196x768_Smartphone.png", // Añade esta línea
-        "1402x900": "1402x900_WideScreen.png",
-        "1680x1080": "1680x1080_FullHd.png",
-        "3840x2160": "3840x2160_4K.png"
+        "1196x768": "widescreen.png",
+        "1196x768_mobile": "smartphone.png", // Añade esta línea
+        "1402x900": "laptop.png",
+        "1680x1080": "fullhd.png",
+        "3840x2160": "4K.png"
       };
 
       var selectedImage;
@@ -265,7 +265,7 @@
       section.style.backgroundImage = 'url(' + path + selectedImage + ')';
     }
 
-  </script>  -->
+  </script>  
 
   <script src="./dist/flowbite.min.js"></script>
 </body>
