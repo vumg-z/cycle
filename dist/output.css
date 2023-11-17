@@ -2605,6 +2605,10 @@ input:checked + .toggle-bg {
   background-image: url('../src/images/logo/1196x');
 }
 
+.bg-\[url\(\'https\:\/\/redcycle\.com\.mx\/src\/images\/logo\/1196x768_Smartphone\.png\'\)\] {
+  background-image: url('https://redcycle.com.mx/src/images/logo/1196x768_Smartphone.png');
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
