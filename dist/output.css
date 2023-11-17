@@ -2609,6 +2609,30 @@ input:checked + .toggle-bg {
   background-image: url('https://redcycle.com.mx/src/images/logo/1196x768_Smartphone.png');
 }
 
+.bg-\[url\(\'https\:\/\/redcycle\.com\.mx\/src\/images\/logo\/\.png\'\)\] {
+  background-image: url('https://redcycle.com.mx/src/images/logo/.png');
+}
+
+.bg-\[url\(\'https\:\/\/redcycle\.com\.mx\/src\/images\/logo\/38\.png\'\)\] {
+  background-image: url('https://redcycle.com.mx/src/images/logo/38.png');
+}
+
+.bg-\[url\(\'https\:\/\/redcycle\.com\.mx\/src\/images\/logo\/3840z\.png\'\)\] {
+  background-image: url('https://redcycle.com.mx/src/images/logo/3840z.png');
+}
+
+.bg-\[url\(\'https\:\/\/redcycle\.com\.mx\/src\/images\/logo\/3840x\.png\'\)\] {
+  background-image: url('https://redcycle.com.mx/src/images/logo/3840x.png');
+}
+
+.bg-\[url\(\'https\:\/\/redcycle\.com\.mx\/src\/images\/logo\/3840x2160\.png\'\)\] {
+  background-image: url('https://redcycle.com.mx/src/images/logo/3840x2160.png');
+}
+
+.bg-\[url\(\'https\:\/\/redcycle\.com\.mx\/src\/images\/logo\/3840x2160_4K\.png\'\)\] {
+  background-image: url('https://redcycle.com.mx/src/images/logo/3840x2160_4K.png');
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
