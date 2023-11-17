@@ -2577,6 +2577,10 @@ input:checked + .toggle-bg {
   background-image: url('../src/images/logo/1196x768_Smartphone');
 }
 
+.bg-\[url\(\'\.\.\/src\/images\/logo\/smartphone\'\)\] {
+  background-image: url('../src/images/logo/smartphone');
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
