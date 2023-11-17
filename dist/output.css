@@ -3876,6 +3876,11 @@ input:checked + .toggle-bg {
     padding-bottom: 14rem;
   }
 
+  .lg\:py-40 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
   .lg\:pt-0 {
     padding-top: 0px;
   }
