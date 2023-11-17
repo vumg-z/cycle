@@ -2569,76 +2569,12 @@ input:checked + .toggle-bg {
   --tw-bg-opacity: 0.5;
 }
 
-.bg-\[url\(\'\.\.\/src\/images\/logo\/1196x768_Smartphone\.png\'\)\] {
-  background-image: url('../src/images/logo/1196x768_Smartphone.png');
-}
-
-.bg-\[url\(\'\.\.\/src\/images\/logo\/3840x2160_4K\'\)\] {
-  background-image: url('../src/images/logo/3840x2160_4K');
-}
-
-.bg-\[url\(\'\.\.\/src\/images\/logo\/images\/3840x2160_4K\'\)\] {
-  background-image: url('../src/images/logo/images/3840x2160_4K');
-}
-
-.bg-\[url\(\'\.\.\/src\/images\/logo\/images\/3840x2160_4K\.png\'\)\] {
-  background-image: url('../src/images/logo/images/3840x2160_4K.png');
-}
-
-.bg-\[url\(\'\.\.\/src\/images\/logo\/3840x2160_4K\.png\'\)\] {
-  background-image: url('../src/images/logo/3840x2160_4K.png');
-}
-
-.bg-\[url\(\"\.\.\/src\/images\/logo\/3840x2160_4K\.png\"\)\] {
-  background-image: url("../src/images/logo/3840x2160_4K.png");
-}
-
-.bg-\[url\(\'\.\.\/src\/images\/logo\/\'\)\] {
-  background-image: url('../src/images/logo/');
-}
-
-.bg-\[url\(\'\.\.\/src\/images\/logo\/1196\'\)\] {
-  background-image: url('../src/images/logo/1196');
-}
-
-.bg-\[url\(\'\.\.\/src\/images\/logo\/1196x\'\)\] {
-  background-image: url('../src/images/logo/1196x');
-}
-
-.bg-\[url\(\'https\:\/\/redcycle\.com\.mx\/src\/images\/logo\/1196x768_Smartphone\.png\'\)\] {
-  background-image: url('https://redcycle.com.mx/src/images/logo/1196x768_Smartphone.png');
-}
-
-.bg-\[url\(\'https\:\/\/redcycle\.com\.mx\/src\/images\/logo\/\.png\'\)\] {
-  background-image: url('https://redcycle.com.mx/src/images/logo/.png');
-}
-
-.bg-\[url\(\'https\:\/\/redcycle\.com\.mx\/src\/images\/logo\/38\.png\'\)\] {
-  background-image: url('https://redcycle.com.mx/src/images/logo/38.png');
-}
-
-.bg-\[url\(\'https\:\/\/redcycle\.com\.mx\/src\/images\/logo\/3840z\.png\'\)\] {
-  background-image: url('https://redcycle.com.mx/src/images/logo/3840z.png');
-}
-
-.bg-\[url\(\'https\:\/\/redcycle\.com\.mx\/src\/images\/logo\/3840x\.png\'\)\] {
-  background-image: url('https://redcycle.com.mx/src/images/logo/3840x.png');
-}
-
-.bg-\[url\(\'https\:\/\/redcycle\.com\.mx\/src\/images\/logo\/3840x2160\.png\'\)\] {
-  background-image: url('https://redcycle.com.mx/src/images/logo/3840x2160.png');
-}
-
-.bg-\[url\(\'https\:\/\/redcycle\.com\.mx\/src\/images\/logo\/3840x2160_4K\.png\'\)\] {
-  background-image: url('https://redcycle.com.mx/src/images/logo/3840x2160_4K.png');
-}
-
-.bg-\[url\(\'\.\.\/src\/images\/logo\/4k\'\)\] {
-  background-image: url('../src/images/logo/4k');
-}
-
 .bg-\[url\(\'\.\.\/src\/images\/logo\/4k\.png\'\)\] {
   background-image: url('../src/images/logo/4k.png');
+}
+
+.bg-\[url\(\'\.\.\/src\/images\/logo\/1196x768_Smartphone\'\)\] {
+  background-image: url('../src/images/logo/1196x768_Smartphone');
 }
 
 .decoration-slice {
