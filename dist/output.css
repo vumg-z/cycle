@@ -1441,6 +1441,10 @@ input:checked + .toggle-bg {
   max-width: 24rem;
 }
 
+.max-w-md {
+  max-width: 28rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -3741,6 +3745,10 @@ input:checked + .toggle-bg {
     margin-top: 8rem;
   }
 
+  .md\:mr-0 {
+    margin-right: 0px;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -3785,6 +3793,10 @@ input:checked + .toggle-bg {
 
   .md\:pl-2 {
     padding-left: 0.5rem;
+  }
+
+  .md\:pl-0 {
+    padding-left: 0px;
   }
 
   .md\:text-left {
@@ -3889,6 +3901,11 @@ input:checked + .toggle-bg {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   :is(.dark .dark\:lg\:hover\:\[paint-order\:markers\]:hover) {
