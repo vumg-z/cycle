@@ -2581,6 +2581,18 @@ input:checked + .toggle-bg {
   background-image: url('../src/images/logo/4k.png');
 }
 
+.bg-\[url\(\'\.\.\/src\/images\/1-Slider\'\)\] {
+  background-image: url('../src/images/1-Slider');
+}
+
+.bg-\[url\(\'\.\.\/src\/images\/1-Slider\.png\'\)\] {
+  background-image: url('../src/images/1-Slider.png');
+}
+
+.bg-\[url\(\'\.\.\/src\/images\/1-Slider\.jpg\'\)\] {
+  background-image: url('../src/images/1-Slider.jpg');
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
