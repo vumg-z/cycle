@@ -1433,16 +1433,16 @@ input:checked + .toggle-bg {
   max-width: 42rem;
 }
 
+.max-w-md {
+  max-width: 28rem;
+}
+
 .max-w-screen-xl {
   max-width: 1280px;
 }
 
 .max-w-sm {
   max-width: 24rem;
-}
-
-.max-w-md {
-  max-width: 28rem;
 }
 
 .flex-1 {
@@ -2872,11 +2872,6 @@ input:checked + .toggle-bg {
   line-height: 1.75rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -3745,10 +3740,6 @@ input:checked + .toggle-bg {
     margin-top: 8rem;
   }
 
-  .md\:mr-0 {
-    margin-right: 0px;
-  }
-
   .md\:flex {
     display: flex;
   }
@@ -3793,10 +3784,6 @@ input:checked + .toggle-bg {
 
   .md\:pl-2 {
     padding-left: 0.5rem;
-  }
-
-  .md\:pl-0 {
-    padding-left: 0px;
   }
 
   .md\:text-left {
@@ -3893,6 +3880,11 @@ input:checked + .toggle-bg {
     padding-top: 0px;
   }
 
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .lg\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
@@ -3901,11 +3893,6 @@ input:checked + .toggle-bg {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   :is(.dark .dark\:lg\:hover\:\[paint-order\:markers\]:hover) {
