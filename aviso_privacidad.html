@@ -1,0 +1,391 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+
+    <style>
+        /* Agrega estilos CSS para el efecto de elevación al hacer hover */
+        .image-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container:hover img {
+            transform: translateY(-10px);
+            /* Puedes ajustar el valor según tu preferencia */
+        }
+
+        /* Agrega estilos CSS para mover el SVG y subrayar el texto al hacer hover */
+        .cta-link {
+            text-decoration: none;
+            color: #dc2626;
+            /* Color del texto */
+            display: flex;
+            align-items: center;
+            transition: text-decoration 0.3s ease-in-out;
+        }
+
+        .cta-link:hover {
+            text-decoration: underline;
+            /* Subrayar el texto al hacer hover */
+        }
+
+        .cta-link svg {
+            margin-left: 8px;
+            /* Ajusta el margen izquierdo según tu preferencia */
+            transition: margin-left 0.3s ease-in-out;
+        }
+
+        .cta-link:hover svg {
+            margin-left: 12px;
+            /* Mueve el SVG hacia la derecha al hacer hover */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="bg-red-600 border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+                <a href="index.html" class="flex items-center">
+                    <img src="./src/images/menor tamaño.png" class="mr-3 h-6 sm:h-9" alt="Redcycle Logo" />
+                </a>
+                <div class="flex items-center lg:order-2">
+                    <button data-collapse-toggle="mobile-menu-2" type="button"
+                        class="inline-flex items-center p-2 ml-1 text-sm text-white rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <svg class="hidden w-6 h-6" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <li>
+                            <a href="index.html" class="block py-2 pr-4 pl-3 text-white rounded "
+                                aria-current="page">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="nosotros.html" class="block py-2 pr-4 pl-3 text-white rounded">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="servicios.html" class="block py-2 pr-4 pl-3 text-white rounded">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="compromiso.html" class="block py-2 pr-4 pl-3 text-white rounded">Compromiso
+                                Social</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html" class="block py-2 pr-4 pl-3 text-white rounded">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="bg-red-600 py-2">
+        <h2 class="text-center text-2xl font-bold text-white ">AVISO DE PRIVACIDAD</h2>
+    </div>
+
+    <section class="text-center mx-auto px-16 lg:px-32 xl:px-64 2xl:px-80">
+        <p class="lg:mt-4">
+            En base a la normativa fijada por la “Ley Federal de Protección de Datos Personales en Posesión de
+            Particulares” (LEY) y en el “Reglamento a la Ley Federal de Protección de Datos Personales en Posesión de
+            Particulares” (REGLAMENTO), así como en las especificaciones y parámetros previstos en los lineamientos del
+            Aviso de Privacidad publicados en el Diario Oficial de la Federación, Acceso a la Información y Protección
+            de Datos Personales (INAI), la empresa denominada “REDCYCLE”, conocida comercialmente y para los efectos del
+            presente aviso como “REDCYCLE” (EL RESPONSABLE); pone a disposición del público en general el presente Aviso
+            de Privacidad Integral para la Protección de los Datos Personales (Aviso de Privacidad).
+
+            <br> <br>
+            <span class="text-red-600"> Responsable de los datos personales. </span> <br>
+
+            El responsable de la recepción, manejo y salvaguarda de la información será “REDCYCLE”, información que será
+            utilizada en base al tratamiento y finalidades que se prevén a lo largo del presente Aviso de Privacidad.
+
+            Para el Responsable, el tratar sus datos de manera legítima resulta un tema prioritario. Este Aviso de
+            Privacidad complementa cualesquiera otros avisos de privacidad simplificados que nuestra organización haya
+            puesto a su disposición y resulta supletorio en todo aquello que expresamente no refieran tales avisos.
+
+            <br> <br> <span class="text-red-600"> Datos personales que se recaban. </span> <br>
+
+            “REDCYCLE” recabará de sus clientes, proveedores y prestadores de servicios los siguientes datos: nombre,
+            nacionalidad, lugar de nacimiento, estado civil, edad, domicilio personal y de trabajo, números telefónicos,
+            correo electrónico, registro federal de contribuyentes (RFC), datos bancarios, estados de cuenta, datos
+            patrimoniales, copia de identificación oficial, firma autógrafa, fotografías por medio de las copias de las
+            identificaciones oficiales e imágenes estáticas.
+
+            Asimismo, “REDCYCLE” solicitará de sus trabajadores y de las personas con quien guarda una relación directa
+            de trabajo los siguientes datos: nombre, fecha de nacimiento, lugar de nacimiento, domicilio particular,
+            teléfono, correo electrónico, clave única de registro de población (CURP), registro federal de
+            contribuyentes (RFC), estado civil, antecedentes penales, acta de nacimiento, comprobante de domicilio,
+            información relativa al inmueble en el que vive, cartilla militar, documentos relativos con su estado de
+            salud, cartas de recomendación, grado escolaridad y trayectoria educativa, título o certificado que ampare
+            el grado de escolaridad, firma autógrafa, huella digital, número de Seguro Social, número de crédito
+            INFONAVIT, licencia de manejo y fotografías por medio de las copias de las identificaciones oficiales e
+            imágenes estáticas.
+
+            Toda aquella información que sea facilitada respecto de datos personales de terceros como elementos de
+            referencia o de contacto, se sujetarán a las medidas de protección de la información de “REDCYCLE” quien se
+            obliga a no divulgar ni transmitir dicha información, sujetándola al presente aviso de privacidad, no
+            quedando exento de responsabilidad quien facilite tal información.
+
+            <br> <br> <span class="text-red-600"> Finalidad del uso de información. </span> <br>
+
+            A través del presente Aviso de Privacidad “REDCYCLE” declara que los datos personales solicitados y
+            recabados tendrán como finalidad: a) la celebración de contratos o convenios, b) cumplir con las
+            obligaciones adquiridas que existan con el titular de los datos personales, c) para la evaluación de la
+            información patrimonial y financiera, d) identificar al titular de la información, e) brindarle información
+            acerca de cotizaciones, productos y servicios que ofrecemos así como para darle seguimiento a los mismos, f)
+            para poner a disposición de las personas toda nuestra publicidad, g) para realizar encuestas de control de
+            calidad, h) evaluación del prospecto a cliente y/o prestador de servicio y/o proveedor, i) integración del
+            expediente del prospecto y/o cliente y/o prestador de servicio y/o proveedor, j) para fines de comunicación
+            con el titular, k) darlo de alta como cliente y/o proveedor, l) crear un perfil del titular utilizado para
+            los fines aquí establecidos y m) transferir sus datos en caso de que se requiera a otras empresas del grupo
+            corporativo, socios comerciales y/o prestadores de servicio.
+
+            Los datos personales solicitados por “REDCYCLE” hacia con nuestros trabajadores tendrán como finalidad:
+            <br>
+            <br>
+
+        <div class="space-y-4 mx-auto max-w-2xl">
+            <div class="text-center">
+                <p><strong>I.</strong> La celebración de contratos o convenios.</p>
+            </div>
+            <div class="text-center">
+                <p><strong>II.</strong> Identificar al candidato a colaborador.</p>
+            </div>
+            <div class="text-center">
+                <p><strong>III.</strong> Evaluación del candidato a colaborador.</p>
+            </div>
+            <div class="text-center">
+                <p><strong>IV.</strong> Para la integración del expediente del candidato o trabajador.</p>
+            </div>
+            <div class="text-center">
+                <p><strong>V.</strong> Para futuras consultas y antecedentes.</p>
+            </div>
+            <div class="text-center">
+                <p><strong>VI.</strong> Para dar cumplimiento a obligaciones ante las autoridades en materia fiscal,
+                    laboral y/o seguridad social.</p>
+            </div>
+        </div>
+
+
+
+
+
+        <br> <span class="text-red-600"> Confidencialidad y limitaciones. </span> <br>
+
+        “REDCYCLE” garantiza por medio de todas las medidas de seguridad administrativas, técnicas y físicas el
+        proteger tu información, garantizando en todo momento estricta confidencialidad y privacidad de la
+        información a través de la implementación de medidas de seguridad y de control de la información, así como
+        lo estipulado contractualmente, sujetándonos a los parámetros de la Ley y su Reglamento y las demás
+        normativas aplicables. Aunado a lo anterior, “REDCYCLE” administrará y resguardará los datos personales
+        obtenidos mediante bases de datos, las cuales son administradas única y exclusivamente por las personas
+        designadas para tales efectos, restringiendo todo tipo de acceso a personas no autorizadas, y en ninguna
+        circunstancia; venderá, alquilará, enajenará, compartirá, transmitirá o transferirá tus datos personales sin
+        que medie el consentimiento del titular. Las bases de datos están protegidas en todo momento por sistemas de
+        seguridad de cómputo, con la finalidad de restringir el acceso o tratamiento de la información a personas
+        ajenas y/o terceros no autorizados.
+
+        En caso de que desees limitar el uso o divulgación de los datos personales, en relación con una o varias de
+        las formalidades del tratamiento de tus datos, deberás enviar la solicitud respectiva conforme al
+        procedimiento previsto en el módulo de Derechos Arco del presente Aviso de Privacidad.
+
+        <br> <br> <span class="text-red-600"> Uso de Cookies. </span> <br>
+
+        El sitio web de “REDCYCLE” utiliza cookies (archivos de texto que son descargados automáticamente y
+        almacenados en el dispositivo electrónico por el cual se accede, para reconocer a los usuarios habituales y
+        rastrear su comportamiento de uso en nuestra página web. Las cookies no dañan tus archivos ni permiten que
+        nadie tenga acceso a tus datos personales, simplemente nos permiten personalizar la información para brindar
+        un mejor servicio. Cabe mencionar que, en la sección de contacto de nuestra página de internet, se podrá
+        insertar información referente a datos de contacto.
+        Los cookies son utilizados para obtener información en base a determinar el navegador y sistema operativo.
+
+        <br> <br> <span class="text-red-600"> Transferencia de Datos Personales. </span> <br>
+
+        “REDCYCLE” no transferirá los datos personales de nuestros clientes, proveedores y prestadores de servicios,
+        solo en caso de que se requiera la intervencion de un tercero la cual sea necesaria para poder cumplir con
+        la relación jurídica que dio nacimiento al tratamiento de los datos personales, por lo que ese tercero
+        quedara a cargo del responsable y por requerimiento de Ley o autoridad competente. Asimismo, respecto de
+        nuestros trabajadores informamos que la información no será compartida a, solo en los casos que asi lo
+        requiera la Ley o lo solicite alguna autoridad competente.
+
+        <br> <br> <span class="text-red-600"> Atención a dudas y reclamaciones. </span> <br>
+
+        “REDCYCLE”, tiene correos electrónicos: contacto@redcycle.com.mx, teléfono: (+52) 332688 5165 para la
+        atención de dudas o reclamaciones, así como para los efectos de revocación y negativa del consentimiento y
+        para el seguimiento al procedimiento de Derechos ARCO a favor del titular de los datos personales.
+        Los horarios en los que se podrá solicitar toda la información y atención de dudas, serán de lunes a viernes
+        de las 10:00 horas hasta las 14:00 horas, en el departamento de atención al cliente.
+
+        Dentro del domicilio y el correo electrónico que manifestamos, se podrá solicitar el aviso de privacidad
+        integral y los derechos arco, así como cualquier otro documento o información que verse sobre el tratamiento
+        de tus datos personales.
+
+        <br> <br> <span class="text-red-600"> Derechos ARCO (Acceso, Rectificación, Cancelación y Oposición). </span>
+        <br>
+
+        El titular de los datos personales por sí mismo o a través de su representante legal debidamente acreditado
+        podrá iniciar el procedimiento de derechos ARCO a efecto de exigir la debida atención de sus datos
+        personales, así como solicitar la finalización en el uso de su información. Comprometiéndonos a desahogar el
+        procedimiento conforme a lo estipulado en la Ley y su Reglamento, el cual podrá desahogarse por escrito en
+        el domicilio señalado en el presente Aviso de Privacidad en el apartado de atención a dudas y reclamaciones,
+        así como por correo electrónico en la dirección señalada.
+        El procedimiento de derechos ARCO se explica debidamente en el módulo de Derechos ARCO que ponemos a tu
+        disposición en el presente Aviso de Privacidad o vía física en nuestras oficinas y el cual es exigible por
+        el titular de los derechos si así lo requieres, ya sea físicamente o por medio electrónico siempre y cuando
+        guardes relación con “REDCYCLE”.
+
+        Te informamos que agotadas todas las vías que ponemos a tu disposición y sin haber recibido una respuesta
+        satisfactoria, podrás iniciar el Procedimiento de Protección de Derechos ante el “Instituto Nacional de
+        Acceso a la Información y Protección de Datos” (INAI), cuyo enlace electrónico es www.ifai.gob.mx y/o
+        www.inai.gob.mx dentro de los 15 días siguientes a la recepción o falta de respuesta de su solicitud.
+
+        <br> <br> <span class="text-red-600"> Manifestación del consentimiento.
+        </span> <br>
+
+        Para que “REDCYCLE” pueda llevar a cabo el tratamiento de tus datos personales deberás otorgarnos la
+        aceptación expresa y/o tácita, la cual se realizará de la siguiente manera:
+
+        Aceptación Expresa. - Conforme a lo establecido por el numeral 8 de la Ley, se entenderá que manifestaste tu
+        consentimiento expreso para el tratamiento de tus datos personales cuando manifiestes tu voluntad de manera
+        verbal, por escrito, por medios electrónicos, ópticos o por cualquier otra tecnología. “REDCYCLE” pondrá a
+        tu disposición el presente Aviso de Privacidad a través de su página de internet y/o por correo electrónico
+        y/o de forma física al momento de comenzar cualquier relación o por solicitarlo físicamente en el domicilio
+        que se señala en el apartado de “Atención a dudas y reclamaciones” dentro del presente Aviso de Privacidad,
+        con el fin primordial de que te enteres de su contenido, otorgues y/o niegues tu consentimiento.
+
+        Cuando los datos se obtengan personalmente del titular, “REDCYCLE” pondrá a tu disposición el presente Aviso
+        de Privacidad de manera previa al recabado de los datos personales y de una forma clara y fehaciente por
+        medio de los formatos y medios que se señalan en el presente Aviso de Privacidad.
+        Aceptación Tácita.- Conforme al artículo 8 de la Ley, el contenido del presente Aviso de Privacidad y todo
+        lo referente al mismo serán puestos a disposición del titular por cualquiera de los medios establecidos en
+        el presente Aviso de Privacidad, y para el caso de que no manifiestes tu negativa al tratamiento de tus
+        datos personales en un periodo de 05 (cinco) días naturales contados a partir de que “REDCYCLE” ponga a tu
+        disposición el presente Aviso de Privacidad o sus modificaciones, se entenderá que otorgas tu consentimiento
+        tácito para que tratemos tus datos personales con base en las finalidades del tratamiento establecidas en el
+        presente Aviso de Privacidad.
+
+        Aceptación Retroactiva.- Para todos nuestros clientes, usuarios, prestadores de servicios, proveedores y/o
+        titulares de los datos personales que en fechas anteriores a la publicación del presente aviso de privacidad
+        nos hayan proporcionado datos personales, les será puesto a su disposición el presente Aviso de Privacidad
+        conforme a lo establecido en los apartados que anteceden, con el fin de que nos otorguen o nieguen su
+        consentimiento, para que podamos continuar o no llevando a cabo el tratamiento de los datos personales con
+        base en las finalidades del tratamiento establecidas en el presente Aviso de Privacidad, en el entendido de
+        que en caso de no existir manifestación alguna de oposición al contenido dentro de los 05 cinco días
+        naturales al momento de haberse puesto a tu disposición, tácitamente otorgas tu consentimiento para que
+        podamos llevar a cabo el tratamiento de tus datos personales en base al presente Aviso de Privacidad.
+
+        <br> <br> <span class="text-red-600"> Revocación del consentimiento.
+        </span> <br>
+
+        La revocación del consentimiento en el manejo de la información procederá cuando así lo solicites siempre y
+        cuando acredites ser el titular de los datos personales, y sea jurídicamente viable proceder con la misma ya
+        que si existe una relación contractual vigente o una obligación pendiente por cumplir, estará sujeta la
+        revocación al contrato que dio origen a la relación jurídica, de conformidad con lo establecido por los
+        numerales 16 fracción II de la Ley, 14, 21, 30, 40, 41 y 42 del Reglamento.
+
+        La revocación de tu consentimiento la podrás llevar a cabo después de los 5 (cinco) días naturales que se te
+        han otorgado para que manifiestes tu negativa al tratamiento de la información. Podrás realizar la
+        revocación dentro del domicilio que se ha señalado en el apartado de “Atención a dudas y reclamaciones”,
+        presentando un escrito en donde expresamente menciones tu nombre y la leyenda “Por medio del presente
+        escrito yo (nombre del titular) comparezco a solicitar a la persona moral “REDCYCLE”, la revocación de mi
+        consentimiento para el tratamiento de mis datos personales”, poner el motivo de revocación y la fecha
+        aproximada en que se transmitieron los datos personales, la relación jurídica o comercial que existe o
+        existió con la empresa, tu correo electrónico o domicilio para notificarte la respuesta a tu petición, fecha
+        del día de la solicitud, firma autógrafa y copia de tu identificación oficial. Todos estos requisitos se te
+        solicitan para poder dar fe y veracidad a que la solicitud es emitida de forma comprobable con relación al
+        titular o solicitante.
+
+        <br> <br> <span class="text-red-600"> Listado de exclusión.
+        </span> <br>
+
+
+
+        “REDCYCLE” contará con un listado de exclusión de la información, en la que se pondrá y almacenará toda
+        aquella información que por parte del titular desee ser excluida en el tratamiento de la información, por lo
+        que para proceder a dicho almacenamiento es necesario que presentes un escrito en donde expresamente
+        menciones tu nombre y la leyenda “Por medio del presente escrito yo (nombre del titular) comparezco a
+        solicitar a la persona moral “REDCYCLE.”, la exclusión de mi información referente a: (enlistar o
+        especificar qué tipo de datos e información deseas excluir de nuestro tratamiento) respecto del tratamiento
+        de mis datos personales”, la fecha aproximada en que se transmitieron los datos personales, la relación
+        jurídica o comercial que existe o existió con la empresa, tu correo electrónico o domicilio para notificarte
+        la respuesta a tu petición, fecha de la solicitud, firma autógrafa y copia de tu identificación oficial.
+
+        Te informamos que aun y se excluya o se revoque el consentimiento al tratamiento de la información, es
+        nuestra obligación conservar todos los datos, cuando sea respecto a información contable de 5 a 10 años
+        según lo previsto en el Código Fiscal de la Federación en su Art. 30 y en el caso de información comercial
+        10 años según lo previsto en el Art. 46 del Código de Comercio. Agotado ese plazo de tiempo la información
+        podrá ser eliminada y destruida totalmente.
+
+
+        <br> <br> <span class="text-red-600"> Actualización y modificación al Aviso de Privacidad.
+        </span> <br>
+        El presente Aviso de Privacidad podrá ser modificado en cualquier momento, notificándose mediante su página
+        de internet la última actualización realizada, para que los titulares de los datos personales puedan
+        solicitar la actualización efectuada de conformidad con lo previsto en el apartado de “Atención a dudas y
+        reclamaciones” del presente Aviso de Privacidad.
+        </p>
+        <br>
+    </section>
+
+
+    <footer class="bg-red-600 rounded-lg shadow dark:bg-gray-900 m-4">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <!-- Sección del Logo y nombre de la empresa, si es necesario -->
+                <a href="/index.html" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <img src="/src/images/menor tamaño.png" class="h-8" alt="Cycle Logo" />
+                    <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
+                </a>
+                <!-- Sección de enlaces del footer -->
+                <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0 dark:text-white">
+                    <li><a href="./index.html" class="hover:underline me-4 md:me-6">Inicio</a></li>
+                    <li><a href="./nosotros.html" class="hover:underline me-4 md:me-6">Nosotros</a></li>
+                    <li><a href="./servicios.html" class="hover:underline me-4 md:me-6">Servicios</a></li>
+                    <li><a href="./compromiso.html" class="hover:underline me-4 md:me-6">Compromiso</a></li>
+                    <li><a href="./contacto.html" class="hover:underline me-4 md:me-6">Contacto</a></li>
+                    <!-- Nuevos elementos añadidos aquí -->
+                    <li><a href="./aviso_privacidad.html" class="hover:underline me-4 md:me-6">Aviso de Privacidad</a>
+                    </li>
+                    <li><a href="./aviso_confidencialidad.html" class="hover:underline">Aviso de Confidencialidad</a>
+                    </li>
+                </ul>
+                <div class="text-sm font-medium sm:flex sm:items-center sm:justify-between">
+                    <!-- ... (logo y enlaces si es necesario) ... -->
+                    <!-- Sección de información de contacto -->
+                    <div class="text-white">
+                        <p>Calle Eca Do Queirós 5113-int 1, Jardines Universidad, 45110 Zapopan, Jalisco.</p>
+                        <p><a href="mailto:compras@redcycle.com" class="hover:underline">compras@redcycle.com</a></p>
+                        <p>(33) 2688 5165</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <span class="block text-sm text-white sm:text-center dark:text-white">© 2023 <a href="./index.html"
+                    class="hover:underline">Redcycle™</a>. Todos los derechos reservados.</span>
+        </div>
+    </footer>
+
+
+    <script src="./dist/flowbite.min.js"></script>
+</body>
+
+</html>

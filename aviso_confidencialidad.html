@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+
+    <style>
+        /* Agrega estilos CSS para el efecto de elevación al hacer hover */
+        .image-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container:hover img {
+            transform: translateY(-10px);
+            /* Puedes ajustar el valor según tu preferencia */
+        }
+
+        /* Agrega estilos CSS para mover el SVG y subrayar el texto al hacer hover */
+        .cta-link {
+            text-decoration: none;
+            color: #dc2626;
+            /* Color del texto */
+            display: flex;
+            align-items: center;
+            transition: text-decoration 0.3s ease-in-out;
+        }
+
+        .cta-link:hover {
+            text-decoration: underline;
+            /* Subrayar el texto al hacer hover */
+        }
+
+        .cta-link svg {
+            margin-left: 8px;
+            /* Ajusta el margen izquierdo según tu preferencia */
+            transition: margin-left 0.3s ease-in-out;
+        }
+
+        .cta-link:hover svg {
+            margin-left: 12px;
+            /* Mueve el SVG hacia la derecha al hacer hover */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="bg-red-600 border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+                <a href="index.html" class="flex items-center">
+                    <img src="./src/images/menor tamaño.png" class="mr-3 h-6 sm:h-9" alt="Redcycle Logo" />
+                </a>
+                <div class="flex items-center lg:order-2">
+                    <button data-collapse-toggle="mobile-menu-2" type="button"
+                        class="inline-flex items-center p-2 ml-1 text-sm text-white rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <svg class="hidden w-6 h-6" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <li>
+                            <a href="index.html" class="block py-2 pr-4 pl-3 text-white rounded "
+                                aria-current="page">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="nosotros.html" class="block py-2 pr-4 pl-3 text-white rounded">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="servicios.html" class="block py-2 pr-4 pl-3 text-white rounded">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="compromiso.html" class="block py-2 pr-4 pl-3 text-white rounded">Compromiso
+                                Social</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html" class="block py-2 pr-4 pl-3 text-white rounded">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="bg-red-600 py-2">
+        <h2 class="text-center text-2xl font-bold text-white ">AVISO DE CONFIDENCIALIDAD</h2>
+    </div>
+
+    <section class="text-center mx-auto px-16 lg:px-32 xl:px-64 2xl:px-80">
+        <div class="p-6">
+            <h1 class="text-2xl font-bold text-gray-800 mb-6">
+                Términos y Condiciones de Uso de Sitio Web (<a href="https://redcycle.com.mx/"
+                    class="text-red-600 hover:text-blue-800">https://redcycle.com.mx/</a>)
+            </h1>
+
+            <p class="mb-4 text-gray-700">
+                El presente documento (en adelante “El Contrato”), rige las condiciones de uso y contratación que pone a
+                disposición la empresa RECYCLE (en adelante “La Empresa”) a favor del usuario (en adelante “Usted”,
+                “Usuario”, “Cliente”), el cual, acepta su alcance y contenido en todo momento mientras acceda y/o se
+                encuentre en uso del sitio web <a href="http://www.redcycle.com.mx"
+                    class="text-red-600 hover:text-blue-800">www.redcycle.com.mx</a> (en adelante “El Sitio Web”), así
+                como las redes sociales de la propia “Empresa” que más adelante se detallan.
+            </p>
+            <!-- ... repite el formato para cada párrafo ... -->
+
+            <p class="mb-4 text-gray-700">
+                El Contrato se encuentra redactado y resulta ser aplicable únicamente para Usuarios que residan o estén
+                domiciliados en la República Mexicana, pues de lo contrario, es decir, Usuarios residentes o
+                domiciliados en otro país, al usar y disponer del Sitio Web, lo harán bajo su propio riesgo y
+                responsabilidad, lo anterior, sin que la Empresa tenga perjuicio alguno en caso de contravenir con la
+                legislación aplicable en su territorio.
+            </p>
+
+            <h2 class="text-xl font-semibold text-gray-800 mt-6 mb-2">
+                De la Aceptación:
+            </h2>
+            <p class="mb-4 text-gray-700">
+                Al momento de acceder, utilizar o hacer uso del Sitio Web (así como de las redes sociales de La
+                Empresa), el Usuario acepta tácitamente el alcance y contenido legal del presente Contrato, pues de lo
+                contrario, no podrá hacer uso y disponer de los servicios, ofertas, promociones, contenidos y demás
+                posibles beneficios que otorgue La Empresa. Esta manifestación en sentido negativo, puede ser realizada
+                por Usted en todo momento, poniendo a su disposición los medios de notificación que se refiere cláusulas
+                posteriores.
+            </p>
+
+            <h2 class="text-xl font-semibold text-gray-800 mt-6 mb-2">
+                De la Capacidad del Usuario:
+            </h2>
+            <p class="mb-4 text-gray-700">
+                El Usuario deberá tener capacidad de goce y ejercicio de conformidad con la legislación federal
+                aplicable, pues de lo contrario, el presente Contrato no surtirá ni tendrá efectos en su esfera jurídica
+                y patrimonial, por lo que cualquier persona que carezca de estas facultades, así como los menores de
+                edad, no podrán ni deberán hacer uso del Sitio Web ni las redes sociales de La Empresa.
+            </p>
+
+            <h2 class="text-xl font-semibold text-gray-800 mt-6 mb-2">
+                Derechos de Propiedad Intelectual:
+            </h2>
+            <p class="mb-4 text-gray-700">
+                La Empresa resulta ser legítima propietaria de la marca REDCYCLE® (en adelante “La Marca”), por lo que
+                todo contenido material o inmaterial que realice o se ostente con este signo visible, señalando de
+                manera enunciativa más no limitativa contenidos digitales o no digitales, como lo pueden ser
+                fotografías, audios e ilustraciones, se encuentren o no en estrategias de marketing, campañas de
+                publicidad, medios ATL, entre otros servicios, y que sean comunicados a través de cualquier plataforma
+                apreciable por los sentidos (auditivo, visual, etc.), y/o cualquier otro derecho de propiedad industrial
+                o de autor, se considerará propiedad de La Empresa, por lo que, y con excepción únicamente de lo que
+                señala la cláusula que procede, no podrá utilizarse, disponerse, modificarse, alterarse, difundirse y/o
+                enajenarse por Usted sin previa autorización y licencia otorgada por legítimo representante legal de La
+                Empresa, pues de lo contrario, podrá ser acreedor a las penas que marca la legislación civil y/o penal
+                vigente.
+
+            </p>
+
+
+
+            <h2 class="text-xl font-semibold text-gray-800 mt-6 mb-2">
+                De la Licencia Limitada:
+            </h2>
+            <p class="mb-4 text-gray-700">
+                Usted podrá descargar y/o disponer del contenido a que se refiere la cláusula anterior, tenga o no el
+                signo visible de La Marca, únicamente para su uso personal y no comercial, es decir, como referencia
+                para el caso de que busque contratar los servicios de La Empresa, por lo que se compromete a no alterar
+                o modificar dicho contenido, y mucho menos enajenarlo con terceros. El contenido a que se refiere esta
+                cláusula puede ser sustraído a través del Sitio Web o las redes sociales de La Empresa. El Usuario se
+                obliga a disponer de dicho material por 30 días naturales, por lo que, fenecido dicho plazo, se
+                compromete a eliminarlo so pena de caer en las hipótesis legales que correspondan.
+            </p>
+
+            <h2 class="text-xl font-semibold text-gray-800 mt-6 mb-2">
+                De los Datos Personales:
+            </h2>
+            <p class="mb-4 text-gray-700">
+                La Empresa pone a su disposición, a través de su Sitio Web, y de conformidad con la Ley Federal de Datos
+                Personales en Posesión de Particulares, así como su Reglamento, el Aviso de Privacidad Integral que
+                regula el recabado, finalidad, uso, tratamiento y transferencia de sus datos personales, por lo que
+                cualquier situación que derive de este tema, deberá ser consultado por el Usuario en el documento en
+                cita.
+            </p>
+
+            <h2 class="text-xl font-semibold text-gray-800 mt-6 mb-2">
+                De la Contratación de los Servicios a través de Medios Digitales:
+            </h2>
+            <p class="mb-4 text-gray-700">
+                En caso de que el Usuario pretenda contratar los servicios que ofrezca La Empresa a través de su Sitio
+                Web o redes sociales, deberá cumplir con las políticas y condiciones que, aparte del presente Contrato,
+                señale la Empresa como requisitos para la prestación de sus servicios, como lo pueden ser, de manera
+                enunciativa más no limitativa, celebración de contrato de prestación de servicios, propuesta de
+                servicios, recepción de documentación legal, recepción de información de identidad del cliente, entre
+                otros. En el caso de que el Usuario no cumpla con dichas condiciones, la Empresa se reserva el derecho
+                de no prestar sus servicios sin perjuicio alguno.
+            </p>
+            <p class="mb-4 text-gray-700">
+                En ese tenor, y en el supuesto de que para la prestación de sus servicios La Empresa no ponga a
+                disposición o celebre con usted algún documento, los términos y condiciones se regirán tanto por el
+                anuncio de oferta del servicio que corresponda, así como los usos y costumbres mercantiles en el
+                territorio que se contraten, aplicando como voluntad supletoria el presente Contrato en cuanto a lo que
+                no se interponga con la demás información.
+            </p>
+
+            <h2 class="text-xl font-semibold text-gray-800 mt-6 mb-2">
+                De la Confidencialidad:
+            </h2>
+            <p class="mb-4 text-gray-700">
+                La Empresa se compromete a no divulgar su información confidencial (entendiéndose como aquella personal,
+                financiera, comercial, etc. que pueda causar un inminente daño o perjuicio a Usted) a terceros, con las
+                únicas dos excepciones de que dicha divulgación sea necesaria para cumplir el objetivo de la prestación
+                de algún servicio a su favor o en el caso de que así lo requiera una autoridad competente, supuestos
+                para lo cual se le notificará previamente al Usuario sin que sea requisito su autorización.
+            </p>
+
+            <h2 class="text-xl font-semibold text-gray-800 mt-6 mb-2">
+                De las Redes Sociales:
+            </h2>
+            <p class="mb-4 text-gray-700">
+                En cuanto al contenido de las redes sociales de La Empresa (Facebook, Instagram, Twitter, LinkedIn,
+                entre otras), será tratado de la misma manera que del Sitio Web, es decir, resulta ser propiedad de ésta
+                y comprende un todo, por lo que en cuanto a la propiedad intelectual de las redes se refiere, se deberá
+                atender por Usted lo dispuesto en las cláusulas tercera y cuarta del presente Contrato.
+            </p>
+
+            <h2 class="text-xl font-semibold text-gray-800 mt-6 mb-2">
+                Politicas de Enlaces y Marcas Externas:
+            </h2>
+            <p class="mb-4 text-gray-700">
+                La Empresa podrá hacer uso de hipervínculos de otras páginas web, así como marcas que no le pertenezcan,
+                lo anterior con el objetivo de brindarle un mejor servicio o experiencia al Usuario, razón por lo cual
+                no se hace responsable por el uso indebido de este último respecto de dicha información, así como de
+                igual forma excluye su responsabilidad por cualquier alteración, modificación o cambio que sufra el
+                contenido que se desprenda de dichos medios.
+            </p>
+
+            <h2 class="text-xl font-semibold text-gray-800 mt-6 mb-2">
+                De las Notificaciones:
+            </h2>
+            <p class="mb-4 text-gray-700">
+                La Empresa señala como medio de notificación el correo electrónico siguiente:
+                <span class="text-sm text-red-500">
+                    contacto@redcycle.com.mx </span>
+            </p>
+
+
+            <h2 class="text-xl font-semibold text-gray-800 mt-6 mb-2">
+                De la Jurisdicción Aplicable:
+            </h2>
+            <p class="mb-4 text-gray-700">
+                La Empresa se reserva el derecho para incoar las acciones civiles o penales en contra del Usuario que
+                considere necesarias por el uso indebido del Sitio Web o el incumplimiento del Contrato, por lo que, en
+                caso de controversia, señala como jurisdicción aplicable los Tribunales competentes del Primer Partido
+                Judicial del Estado de Jalisco, con residencia en la ciudad de Zapopan, Jalisco, renunciando ambas
+                partes a cualquier otro fuero presente o futuro con motivo del domicilio de Usted.
+            </p>
+
+
+        </div>
+
+    </section>
+
+
+    <footer class="bg-red-600 rounded-lg shadow dark:bg-gray-900 m-4">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <!-- Sección del Logo y nombre de la empresa, si es necesario -->
+                <a href="/index.html" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <img src="/src/images/menor tamaño.png" class="h-8" alt="Cycle Logo" />
+                    <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
+                </a>
+                <!-- Sección de enlaces del footer -->
+                <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0 dark:text-white">
+                    <li><a href="./index.html" class="hover:underline me-4 md:me-6">Inicio</a></li>
+                    <li><a href="./nosotros.html" class="hover:underline me-4 md:me-6">Nosotros</a></li>
+                    <li><a href="./servicios.html" class="hover:underline me-4 md:me-6">Servicios</a></li>
+                    <li><a href="./compromiso.html" class="hover:underline me-4 md:me-6">Compromiso</a></li>
+                    <li><a href="./contacto.html" class="hover:underline me-4 md:me-6">Contacto</a></li>
+                    <!-- Nuevos elementos añadidos aquí -->
+                    <li><a href="./aviso_privacidad.html" class="hover:underline me-4 md:me-6">Aviso de Privacidad</a>
+                    </li>
+                    <li><a href="./aviso_confidencialidad.html" class="hover:underline">Aviso de Confidencialidad</a>
+                    </li>
+                </ul>
+                <div class="text-sm font-medium sm:flex sm:items-center sm:justify-between">
+                    <!-- ... (logo y enlaces si es necesario) ... -->
+                    <!-- Sección de información de contacto -->
+                    <div class="text-white">
+                        <p>Calle Eca Do Queirós 5113-int 1, Jardines Universidad, 45110 Zapopan, Jalisco.</p>
+                        <p><a href="mailto:compras@redcycle.com" class="hover:underline">compras@redcycle.com</a></p>
+                        <p>(33) 2688 5165</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <span class="block text-sm text-white sm:text-center dark:text-white">© 2023 <a href="./index.html"
+                    class="hover:underline">Redcycle™</a>. Todos los derechos reservados.</span>
+        </div>
+    </footer>
+
+
+    <script src="./dist/flowbite.min.js"></script>
+</body>
+
+</html>
