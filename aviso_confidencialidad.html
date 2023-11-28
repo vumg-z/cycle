@@ -93,6 +93,9 @@
                         <li>
                             <a href="contacto.html" class="block py-2 pr-4 pl-3 text-white rounded">Contacto</a>
                         </li>
+                        <li>
+                            <img id="translateButton" src="./src/images/usa.png" alt="" class="mt-2">
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -310,6 +313,12 @@
         </div>
     </footer>
 
+    <script>
+        document.getElementById('translateButton').addEventListener('click', function () {
+            window.location.href = 'privacy_notice.html';
+        });
+
+    </script>
 
     <script src="./dist/flowbite.min.js"></script>
 </body>

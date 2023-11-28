@@ -309,14 +309,31 @@
             const key = el.getAttribute('data-key');
             const translatedText = traducciones[key];
             if (translatedText) {
-              // Utilizar .innerHTML para interpretar las etiquetas HTML
-              el.innerHTML = translatedText;
+              el.innerHTML = translatedText; // Update the text
+
+              // Check the data-key attribute and update the href accordingly
+              if (key === 'Aviso de Privacidad') {
+                el.href = './privacy_notice.html';
+              } else if (key === 'Aviso de Confidencialidad') {
+                el.href = './confidentiality_notice.html';
+              }
             }
           });
         })
         .catch(error => console.log('Error al cargar las traducciones:', error));
+
+      // Toggle functionality (assuming you want to toggle a class or an attribute)
+      toggleFunction();
     });
 
+    function toggleFunction() {
+      // Example toggle functionality
+      // This is a placeholder; you'll need to replace it with your actual toggle code
+      const toggleElements = document.querySelectorAll('.someToggleClass');
+      toggleElements.forEach(el => {
+        el.classList.toggle('anotherClass');
+      });
+    }
 
 
   </script>
