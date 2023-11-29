@@ -299,19 +299,28 @@
   </script>
 
   <script>
-    document.getElementById('translateButton').addEventListener('click', function () {
+    let originalTexts = {};
+    let originalHrefs = {};
+
+    // Guardar el texto y href original de los elementos traducibles
+    document.querySelectorAll('.translatable').forEach(el => {
+      originalTexts[el.getAttribute('data-key')] = el.innerHTML;
+      if (el.tagName === 'A') { // Verifica si el elemento es un enlace
+        originalHrefs[el.getAttribute('data-key')] = el.href;
+      }
+    });
+
+    // Función para cargar las traducciones
+    function loadTranslations() {
       fetch('traducciones_index.json')
         .then(response => response.json())
         .then(traducciones => {
           const elements = document.querySelectorAll('.translatable');
-
           elements.forEach(el => {
             const key = el.getAttribute('data-key');
             const translatedText = traducciones[key];
             if (translatedText) {
-              el.innerHTML = translatedText; // Update the text
-
-              // Check the data-key attribute and update the href accordingly
+              el.innerHTML = translatedText;
               if (key === 'Aviso de Privacidad') {
                 el.href = './privacy_notice.html';
               } else if (key === 'Aviso de Confidencialidad') {
@@ -321,22 +330,46 @@
           });
         })
         .catch(error => console.log('Error al cargar las traducciones:', error));
+    }
 
-      // Toggle functionality (assuming you want to toggle a class or an attribute)
-      toggleFunction();
+    // Comprobar el idioma actual al cargar la página
+    document.addEventListener('DOMContentLoaded', function () {
+      var isCurrentlyEnglish = localStorage.getItem('languageChangedToEnglish') === 'true';
+      var imgElement = document.getElementById('translateButton');
+
+      if (isCurrentlyEnglish) {
+        imgElement.src = './src/images/mex.png';
+        loadTranslations();
+      }
     });
 
-    function toggleFunction() {
-      // Example toggle functionality
-      // This is a placeholder; you'll need to replace it with your actual toggle code
-      const toggleElements = document.querySelectorAll('.someToggleClass');
-      toggleElements.forEach(el => {
-        el.classList.toggle('anotherClass');
-      });
-    }
+    document.getElementById('translateButton').addEventListener('click', function () {
+      var imgElement = document.getElementById('translateButton');
+      var isCurrentlyEnglish = localStorage.getItem('languageChangedToEnglish') === 'true';
+
+      if (!isCurrentlyEnglish) {
+        // Cambiar a inglés...
+        imgElement.src = './src/images/mex.png';
+        localStorage.setItem('languageChangedToEnglish', 'true');
+        loadTranslations();
+      } else {
+        // Cambiar a español...
+        imgElement.src = './src/images/usa.png';
+        localStorage.setItem('languageChangedToEnglish', 'false');
+
+        document.querySelectorAll('.translatable').forEach(el => {
+          const key = el.getAttribute('data-key');
+          el.innerHTML = originalTexts[key];
+          if (el.tagName === 'A') { // Si es un enlace, restaura el href original
+            el.href = originalHrefs[key];
+          }
+        });
+      }
+    });
 
 
   </script>
+
 
 
 

@@ -11,7 +11,7 @@ def tag_visible(element):
     return True
 
 # Reemplaza 'your_website_url' con la URL de tu página web.
-url = 'http://127.0.0.1:5501/nosotros.html'
+url = 'http://127.0.0.1:5501/contacto.html'
 
 # Realiza una petición GET para obtener el contenido de la página.
 response = requests.get(url)

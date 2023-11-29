@@ -38,31 +38,38 @@
                         id="mobile-menu-2">
                         <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                             <li>
-                                <a href="index.html" class="block py-2 pr-4 pl-3 text-white rounded">Inicio</a>
+                                <a href="index.html" class="translatable block py-2 pr-4 pl-3 text-white rounded"
+                                    aria-current="page" data-key="Inicio">Inicio</a>
                             </li>
                             <li>
-                                <a href="nosotros.html" class="block py-2 pr-4 pl-3 text-white rounded "
-                                    aria-current="page">Nosotros</a>
+                                <a href="nosotros.html" class="translatable block py-2 pr-4 pl-3 text-white rounded"
+                                    data-key="Servicios">Nosotros</a>
                             </li>
                             <li>
-                                <a href="servicios.html" class="block py-2 pr-4 pl-3 text-white rounded">Servicios</a>
+                                <a href="servicios.html" class="translatable block py-2 pr-4 pl-3 text-white  rounded"
+                                    data-key="Nosotros">Servicios</a>
                             </li>
                             <li>
                                 <a href="compromiso.html"
-                                    class="block py-2 pr-4 pl-3 text-white text rounded">Compromiso
-                                    Social</a>
+                                    class="translatable block py-2 pr-4 pl-3 text-gray-900 rounded"
+                                    data-key="Compromiso Social">Compromiso Social</a>
                             </li>
                             <li>
-                                <a href="contacto.html" class="block py-2 pr-4 pl-3 text-gray-900rounded">Contacto</a>
+                                <a href="contacto.html" class="translatable block py-2 pr-4 pl-3 text-white rounded"
+                                    data-key="Contacto">Contacto</a>
+                            </li>
+                            <li>
+                                <img id="translateButton" src="./src/images/usa.png" alt="" class="mt-2">
                             </li>
                         </ul>
+
                     </div>
                 </div>
             </nav>
         </header>
 
         <div class="bg-red-600 py-2 text-center ">
-            <h2 class="text-2xl font-bold text-white">CONTACTO</h2>
+            <h2 data-key="CONTACTO" class="text-2xl font-bold text-white translatable">CONTACTO</h2>
         </div>
 
 
@@ -100,7 +107,7 @@
                                                 </div>
                                             </div>
                                             <div class="ml-6 grow">
-                                                <p class="mb-2 font-bold dark:text-white">
+                                                <p data-key="contactanos" class=" translatable  font-bold dark:text-white">
                                                     Contáctanos
                                                 </p>
                                                 <p class="text-neutral-500 dark:text-neutral-200">
@@ -130,7 +137,7 @@
                                                 </div>
                                             </div>
                                             <div class="ml-6 grow">
-                                                <p class="mb-2 font-bold dark:text-white">
+                                                <p data-key="Ventas" class="translatable  mb-2 font-bold dark:text-white">
                                                     Ventas
                                                 </p>
                                                 <p class="text-neutral-500 dark:text-neutral-200">
@@ -160,43 +167,123 @@
         <footer class="bg-red-600 rounded-lg shadow dark:bg-gray-900 m-4">
             <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
                 <div class="sm:flex sm:items-center sm:justify-between">
-                    <!-- Sección del Logo y nombre de la empresa, si es necesario -->
+                    <!-- Logo and company name section, if necessary -->
                     <a href="/index.html" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                         <img src="/src/images/menor tamaño.png" class="h-8" alt="Cycle Logo" />
-                        <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
                     </a>
-                    <!-- Sección de enlaces del footer -->
+                    <!-- Footer links section -->
                     <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0 dark:text-white">
-                        <li><a href="./index.html" class="hover:underline me-4 md:me-6">Inicio</a></li>
-                        <li><a href="./nosotros.html" class="hover:underline me-4 md:me-6">Nosotros</a></li>
-                        <li><a href="./servicios.html" class="hover:underline me-4 md:me-6">Servicios</a></li>
-                        <li><a href="./compromiso.html" class="hover:underline me-4 md:me-6">Compromiso</a></li>
-                        <li><a href="./contacto.html" class="hover:underline me-4 md:me-6">Contacto</a></li>
-                        <!-- Nuevos elementos añadidos aquí -->
-                        <li><a href="./aviso_privacidad.html" class="hover:underline me-4 md:me-6">Aviso de
-                                Privacidad</a></li>
-                        <li><a href="./aviso_confidencialidad.html" class="hover:underline">Aviso de
-                                Confidencialidad</a></li>
+                        <li><a href="./index.html" class="translatable hover:underline me-4 md:me-6"
+                                data-key="Inicio">Inicio</a></li>
+                        <li><a href="./nosotros.html" class="translatable hover:underline me-4 md:me-6"
+                                data-key="Nosotros">Nosotros</a></li>
+                        <li><a href="./servicios.html" class="translatable hover:underline me-4 md:me-6"
+                                data-key="Servicios">Servicios</a></li>
+                        <li><a href="./compromiso.html" class="translatable hover:underline me-4 md:me-6"
+                                data-key="Compromiso Social">Compromiso</a></li>
+                        <li><a href="./contacto.html" class="translatable hover:underline me-4 md:me-6"
+                                data-key="Contacto">Contacto</a></li>
+                        <!-- New elements added here -->
+                        <li><a href="./aviso_privacidad.html" class="translatable hover:underline me-4 md:me-6"
+                                data-key="Aviso de Privacidad">Aviso de Privacidad</a></li>
+                        <li><a href="./aviso_confidencialidad.html" class="translatable hover:underline"
+                                data-key="Aviso de Confidencialidad">Aviso de Confidencialidad</a></li>
                     </ul>
                     <div class="text-sm font-medium sm:flex sm:items-center sm:justify-between">
-                        <!-- ... (logo y enlaces si es necesario) ... -->
-                        <!-- Sección de información de contacto -->
+                        <!-- Contact information section -->
                         <div class="text-white">
-                            <p>Calle Eca Do Queirós 5113-int 1, Jardines Universidad, 45110 Zapopan, Jalisco.</p>
-                            <p><a href="mailto:compras@redcycle.com" class="hover:underline">compras@redcycle.com</a>
-                            </p>
-                            <p>(33) 2688 5165</p>
+                            <p class="translatable"
+                                data-key="Calle Eca Do Queirós 5113-int 1, Jardines Universidad, 45110 Zapopan, Jalisco.">
+                                Calle Eca Do
+                                Queirós 5113-int 1, Jardines Universidad, 45110 Zapopan, Jalisco.</p>
+                            <p><a href="mailto:compras@redcycle.com" class=" hover:underline"
+                                    data-key="compras@redcycle.com">compras@redcycle.com</a></p>
+                            <p class="translatable" data-key="(33) 2688 5165">(33) 2688 5165</p>
                         </div>
                     </div>
                 </div>
                 <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
                 <span class="block text-sm text-white sm:text-center dark:text-white">© 2023 <a href="./index.html"
-                        class="hover:underline">Redcycle™</a>. Todos los derechos reservados.</span>
+                        class="translatable hover:underline" data-key="Redcycle™">Redcycle™</a>. <span
+                        class="translatable" data-key="Todos los derechos reservados.">Todos los derechos
+                        reservados.</span></span>
             </div>
         </footer>
 
 
     </div>
+
+    <script>
+        let originalTexts = {};
+        let originalHrefs = {};
+
+        // Guardar el texto y href original de los elementos traducibles
+        document.querySelectorAll('.translatable').forEach(el => {
+            originalTexts[el.getAttribute('data-key')] = el.innerHTML;
+            if (el.tagName === 'A') { // Verifica si el elemento es un enlace
+                originalHrefs[el.getAttribute('data-key')] = el.href;
+            }
+        });
+
+        // Función para cargar las traducciones
+        function loadTranslations() {
+            fetch('traducciones_contacto.json')
+                .then(response => response.json())
+                .then(traducciones => {
+                    const elements = document.querySelectorAll('.translatable');
+                    elements.forEach(el => {
+                        const key = el.getAttribute('data-key');
+                        const translatedText = traducciones[key];
+                        if (translatedText) {
+                            el.innerHTML = translatedText;
+                            if (key === 'Aviso de Privacidad') {
+                                el.href = './privacy_notice.html';
+                            } else if (key === 'Aviso de Confidencialidad') {
+                                el.href = './confidentiality_notice.html';
+                            }
+                        }
+                    });
+                })
+                .catch(error => console.log('Error al cargar las traducciones:', error));
+        }
+
+        // Comprobar el idioma actual al cargar la página
+        document.addEventListener('DOMContentLoaded', function () {
+            var isCurrentlyEnglish = localStorage.getItem('languageChangedToEnglish') === 'true';
+            var imgElement = document.getElementById('translateButton');
+
+            if (isCurrentlyEnglish) {
+                imgElement.src = './src/images/mex.png';
+                loadTranslations();
+            }
+        });
+
+        document.getElementById('translateButton').addEventListener('click', function () {
+            var imgElement = document.getElementById('translateButton');
+            var isCurrentlyEnglish = localStorage.getItem('languageChangedToEnglish') === 'true';
+
+            if (!isCurrentlyEnglish) {
+                // Cambiar a inglés...
+                imgElement.src = './src/images/mex.png';
+                localStorage.setItem('languageChangedToEnglish', 'true');
+                loadTranslations();
+            } else {
+                // Cambiar a español...
+                imgElement.src = './src/images/usa.png';
+                localStorage.setItem('languageChangedToEnglish', 'false');
+
+                document.querySelectorAll('.translatable').forEach(el => {
+                    const key = el.getAttribute('data-key');
+                    el.innerHTML = originalTexts[key];
+                    if (el.tagName === 'A') { // Si es un enlace, restaura el href original
+                        el.href = originalHrefs[key];
+                    }
+                });
+            }
+        });
+
+
+    </script>
 
     <script src="./dist/flowbite.min.js"></script>
 </body>
