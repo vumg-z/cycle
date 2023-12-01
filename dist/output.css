@@ -3840,6 +3840,14 @@ input:checked + .toggle-bg {
     margin-top: 6rem;
   }
 
+  .md\:mb-28 {
+    margin-bottom: 7rem;
+  }
+
+  .md\:mt-28 {
+    margin-top: 7rem;
+  }
+
   .md\:flex {
     display: flex;
   }
