@@ -1289,6 +1289,14 @@ input:checked + .toggle-bg {
   margin-top: 2rem;
 }
 
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .box-border {
   box-sizing: border-box;
 }
