@@ -3832,6 +3832,14 @@ input:checked + .toggle-bg {
     margin-top: 8rem;
   }
 
+  .md\:mb-24 {
+    margin-bottom: 6rem;
+  }
+
+  .md\:mt-24 {
+    margin-top: 6rem;
+  }
+
   .md\:flex {
     display: flex;
   }
