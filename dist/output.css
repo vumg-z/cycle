@@ -3901,6 +3901,10 @@ input:checked + .toggle-bg {
     order: 2;
   }
 
+  .lg\:m-0 {
+    margin: 0px;
+  }
+
   .lg\:my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
